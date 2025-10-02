@@ -2,11 +2,23 @@
     padding: 0;
     margin: 0;
 }
+header{
+    background-color: gray;
+}
+header > nav{
+    display: flex;
+    justify-content: space-around;
+}
+header > nav > ul{
+    display: flex;
+    gap: 5vw;
+}
 main > section{
     height: 100vh;
 }
 footer p{
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: 'Roboto';
 }
 footer > section > article > div > img{
     height: 8vh;
@@ -40,10 +52,7 @@ footer > section > article:nth-child(1){
     height: 100%;
 }
 footer > section > article > div > h4{
-    font-size: 2em;
-}
-footer > section > article > div > ul{
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 footer > section > article:nth-child(2){
     display: flex;
@@ -56,24 +65,24 @@ footer > section > article:nth-child(2) > div{
     align-items: center;
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
 a:hover{
     cursor: pointer;
 }
-@media all and (max-width: 992px) {
-  footer > section{
+footer > section > article > div > div > ul > li > a{
+    text-decoration: none;
+    color: gray;
+    font-family: 'Roboto';
+}
+footer > section > article > div > div > ul{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
-footer > section > article:nth-child(1){
-    width: 100vw;
-}
-}
-@media all and (max-width: 576px) {
-  footer > section{
+footer > section > article:nth-child(2) > div > div{
     display: flex;
-    flex-direction: column;
-}
-footer > section > article:nth-child(1){
-    width: 100vw;
-}
+    align-items: center;
+    height: 100%;
 }
